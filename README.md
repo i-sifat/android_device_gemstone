@@ -1,4 +1,8 @@
 #  Unified Device Tree for POCO X5 5G ( moonstone ) / Redmi Note 12 5G | Note 12R Pro ( sunstone )
+Lineage
+source build/envsetup.sh
+lunch lineage_stone-bp2a-userdebug
+m bacon | tee build-log.txt
 
 ## Spec Sheet
 

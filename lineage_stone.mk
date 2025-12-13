@@ -29,6 +29,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 12 5G
 PRODUCT_NAME := lineage_stone
 
+# Gapps-flag
+WITH_GMS := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
