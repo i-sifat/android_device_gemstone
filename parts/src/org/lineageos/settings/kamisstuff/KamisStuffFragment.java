@@ -25,7 +25,6 @@ import org.lineageos.settings.corecontrol.CoreControlActivity;
 import org.lineageos.settings.fastcharge.FastChargeActivity;
 import org.lineageos.settings.zram.ZramActivity;
 import org.lineageos.settings.useless.UselessActivity;
-import org.lineageos.settings.kernelmanager.KernelManagerActivity;
 
 public class KamisStuffFragment extends PreferenceFragment {
 
@@ -33,7 +32,6 @@ public class KamisStuffFragment extends PreferenceFragment {
     private static final String KEY_FAST_CHARGE = "fast_charge";
     private static final String KEY_ZRAM = "zram";
     private static final String KEY_USELESS = "useless";
-    private static final String KEY_KERNEL_MANAGER = "kernel_manager";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -78,15 +76,5 @@ public class KamisStuffFragment extends PreferenceFragment {
         	return true;
     	    });
 	}
-
-        // Kernel Manager preference
-        Preference kernelManagerPref = findPreference(KEY_KERNEL_MANAGER);
-        if (kernelManagerPref != null) {
-            kernelManagerPref.setOnPreferenceClickListener(preference -> {
-                Intent intent = new Intent(getActivity(), KernelManagerActivity.class);
-                startActivity(intent);
-                return true;
-            });
-        }
     }
 }
