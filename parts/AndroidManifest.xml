@@ -87,11 +87,6 @@
             android:exported="false" />
 
         <activity
-            android:name=".fastcharge.FastChargeActivity"
-            android:label="@string/fastcharge_title"
-            android:exported="false" />
-
-        <activity
     	    android:name=".useless.UselessActivity"
     	    android:label="@string/useless_mode_title"
     	    android:exported="false" />
@@ -112,7 +107,9 @@
 
 	<activity
     	    android:name=".fastcharge.FastChargeActivity"
-            android:label="@string/fastcharge_title">
+            android:label="@string/fastcharge_title"
+            android:exported="false">
+
     	    <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>

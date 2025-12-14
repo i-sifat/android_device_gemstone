@@ -13,6 +13,11 @@ $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 # Datura
 PRODUCT_PACKAGES += Datura
 
+# Gcam
+$(call inherit-product-if-exists, vendor/gcam/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
+
 # Dolby
 $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
